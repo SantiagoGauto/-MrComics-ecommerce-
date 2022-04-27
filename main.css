@@ -1310,6 +1310,15 @@ footer img {
         padding: 10px 75px;
     }
 
+    .contactanos {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .newsletter {
+        font-size: 25px;
+    }
+
     .pago {
         font-size: 30px;
         padding: 15px 50px;
