@@ -17,6 +17,33 @@
     auto;
 }
 
+/* Boostrap */
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 150%;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 80%;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+h3 {
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
 /*------------------------------------------------------HEADER ALL------------------------------------------------------*/
 
 header {
@@ -72,195 +99,50 @@ header {
 
 /*------------------------------------------------------NAV ALL------------------------------------------------------*/
 
-nav {
-    grid-area: nav;
-    padding: 5px;
-    box-shadow: black 0px 2px 20px 1px;
-    background-color: #230505;
-    position: static;
-    top: 0%;
+.navbar {
+    font-family: 'Staatliches', cursive !important;
+    font-size: 1.40rem !important;
+    padding-top: 0.1rem !important;
+    padding-bottom: 0.1rem !important;
 }
 
-.navegador {
-    display: flex;
-    align-items: stretch;
+.bg-danger {
+    background-color: #230505 !important;
 }
 
-.navegador-contenedor {
-    margin: 5px 0px; 
+.navbar-light .navbar-brand {
+    color: #700000 !important;
 }
 
-nav ul li {
-    text-align: center;
-    background-color: #5a0d0d85;
-    border-radius: 100px;
-    padding: 7px 7px;
-    display: inline;
-    list-style-type: none;
-    font-size: 20px;
-    font-family: 'Staatliches', cursive;
+.navbar-brand {
+    font-size: 1.55rem !important;
 }
 
-.search-box{
-    box-shadow: #954040 0px 0px 8px 2px;
-    position: absolute;
-    right: 0.7%;
-    margin-top: -38px;
-    background: #2C3441;
-    border-radius: 40px;
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: #ffffffe6;
 }
 
-.search-box:hover > input{
-    width:200px;
-    padding: 0 10px;
+.navbar-light .navbar-nav .nav-link {
+    color: #ffffff8c;
 }
 
-.search-box:hover > .icon{
-    background: #536179;
-}
-.icon:hover{
-    transform: rotate(360deg) scale(0.8);
-}
-
-.buscar{
-    width: 0;
-    border: none;
-    outline: none;
-    padding: 0;
-    background: none;
-    font-size: 1.1rem;
-    transition: 0.5s ease;
-    line-height: 40px;
-    color: #fff;
+.form-control {
+    border: solid 1px #ffffff !important;
+    padding: 10px 95px 10px 15px!important;
+    margin: 2px 5px !important;
+    border-radius: 0 !important;
+    background-color: #ffffff25;
 }
 
-.icon{
-    color: #faf8f8;
-    float: right;
-    width: 40px;
-    font-size: 1.3rem;
-    height: 40px;
-    border-radius: 50%;
-    background: #2f3640;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.4s;
-    cursor: pointer;
-    text-decoration: none;
+.btn-outline-success {
+    color: #bcc900;
+    border-color: #ffffff00;
+    background-color: #1e1d00;
 }
 
-.Home {
-    color: #ffffff;
-    text-decoration: none;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 4rem;
-    border: solid 2px;
-    margin: 2rem 0 3rem;
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-}
-
-.Home:hover{
-    -webkit-animation: pulsate-navv 1s ease-in-out;
-    animation: pulsate-navv 1s ease-in-out;
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-}
-    
-@keyframes pulsate-navv {
-0%{
-    box-shadow: 0 0 5px #545454, 0 0 15px #ffffff;
-    background-color: #d2b1b1;
-    color: #300000;
-}
-}
-
-.Libros {
-    color: #ffffff;
-    text-decoration: none;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 4rem;
-    border: solid 2px;
-    margin: 2rem 0 3rem;
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-}
-
-.Libros:hover{
-    -webkit-animation: pulsate-navv 1s ease-in-out;
-    animation: pulsate-navv 1s ease-in-out;
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-}
-    
-.Merchandising {
-    color: #ffffff;
-    text-decoration: none;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 4rem;
-    border: solid 2px;
-    margin: 2rem 0 3rem;
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-}
-
-.Merchandising:hover{
-    -webkit-animation: pulsate-navv 1s ease-in-out;
-    animation: pulsate-navv 1s ease-in-out;
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-    }
-
-.Ofertas {
-    color: #ffffff;
-    text-decoration: none;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 4rem;
-    border: solid 2px;
-    margin: 2rem 0 3rem;
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-}
-
-.Ofertas:hover{
-    -webkit-animation: pulsate-navv 1s ease-in-out;
-    animation: pulsate-navv 1s ease-in-out;
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-}
-
-.Contactos {
-    color: #ffffff;
-    text-decoration: none;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 4rem;
-    border: solid 2px;
-    margin: 2rem 0 3rem;
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-}
-
-.Contactos:hover{
-    -webkit-animation: pulsate-navv 1s ease-in-out;
-    animation: pulsate-navv 1s ease-in-out;
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
+.navbar-light .navbar-toggler {
+    color: #700002;
+    background-color: #727c76;
 }
 
 /*------------------------------------------------------MAIN------------------------------------------------------*/
@@ -601,6 +483,7 @@ div img {
 }
 
 .textarea {
+    resize: none;
     padding: 20px 40px;
     outline: none;
     border: solid 2px #003002;
@@ -690,9 +573,15 @@ footer img {
 }
 
 .texto-footer h2 {
+    color: #000000;
     text-align: center;
     font-size: 50px;
     text-shadow: 0px 3px 5px #bdbdbd;
+    margin-bottom: 0;
+}
+
+.texto-footer p {
+    color: #000000;
 }
 
 .texto-footer span {
@@ -783,6 +672,7 @@ footer img {
 }
 
 .contactanos {
+    color: #000000;
     text-align: left;
     font-family: 'Staatliches', cursive;
     font-size: 23px;
@@ -801,6 +691,7 @@ footer img {
 }
 
 .newsletter {
+    color: #000000;
     text-align: left;
     font-family: 'Staatliches', cursive;
     font-size: 23px;
@@ -881,37 +772,9 @@ footer img {
         auto;
     }
     
-    header {
-        padding: 10px 0px;
-        width: -webkit-fill-available;
-    }
-
     .imagen-header {
         max-width: 100%;
         margin: 0%;
-    }
-
-    nav {
-        position: relative;
-        padding: 0px;
-    }
-
-    .navegador-contenedor {
-        display: flex;
-        margin: 5px 0px;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-        
-    .buscador {
-        display: none;
-    }
-        
-    .lupa {
-        right: 13px;
-        top: 10px;
-        font-size: 30px;
     }
 
 /*----home----*/
@@ -1117,6 +980,10 @@ footer img {
         auto;
         }
 
+    h2 {
+        font-size: 100%;
+    }
+
     header {
         padding: 0px;
         width: -webkit-fill-available;
@@ -1125,22 +992,6 @@ footer img {
     .imagen-header {
         max-width: 100%;
         margin: 0%;
-    }
-            
-    .navegador {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-            
-    .buscador {
-        display: none;
-    }
-            
-    .lupa {
-        right: 13px;
-        top: 10px;
-        font-size: 30px;
     }
 
     /*----home----*/
@@ -1342,10 +1193,8 @@ footer img {
         auto;
         }
 
-    .navegador {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+    h2 {
+        font-size: 100%;
     }
 
     .fondo-comic {
@@ -1357,7 +1206,13 @@ footer img {
     }
 
     .fondo-imagenes {
-        margin: 15px 10px;
+        width: 225px;
+        margin: 15px 5px;
+    }
+
+    .precio {
+        margin: 15px 50px -10px;
+        font-size: 20px;
     }
 
     .fondo-imagenes-libros {
@@ -1470,6 +1325,10 @@ footer img {
         auto;
         }
 
+    h2 {
+        font-size: 130%;
+    }
+
     .marvel-text {
         padding: 40px;
         font-size: 85px;
@@ -1496,7 +1355,13 @@ footer img {
     }
 
     .fondo-imagenes {
-        margin: 15px 10px;
+        width: 225px;
+        margin: 15px 5px;
+    }
+
+    .precio {
+        margin: 15px 50px -10px;
+        font-size: 20px;
     }
 
     .fondo-imagenes-libros {
