@@ -29,6 +29,11 @@ h2 {
     font-weight: 600;
 }
 
+h4 {
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
 h5 {
     font-size: 80%;
     margin-bottom: 0;
@@ -106,16 +111,31 @@ header {
     padding-bottom: 0.1rem !important;
 }
 
+.nav-link {
+    padding: 0px
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0.7rem;
+    margin-left: 0.7rem;
+}
+
 .bg-danger {
     background-color: #230505 !important;
+    box-shadow: black 0px 0px 20px 1px;
 }
 
 .navbar-light .navbar-brand {
-    color: #700000 !important;
+    color: #3c0505 !important;
+    text-shadow: 0px 0px 5px #000000;
 }
 
 .navbar-brand {
-    font-size: 1.55rem !important;
+    font-size: 1.45rem !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
@@ -123,21 +143,30 @@ header {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #ffffff8c;
+    color: #ffdbdbe0;
+    text-shadow: 0px 0px 5px #ff1a1a;
+    background-image: linear-gradient(transparent 0%, transparent 90%,#680000 90%,#680000 100%);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x: right;
+    transition: background-size 300ms;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    background-size: 100% 100%;
+    background-position-x: left;
 }
 
 .form-control {
-    border: solid 1px #ffffff !important;
-    padding: 10px 95px 10px 15px!important;
-    margin: 2px 5px !important;
-    border-radius: 0 !important;
-    background-color: #ffffff25;
+    padding: 5px 125px 5px 15px!important;
+    margin: 0 5px !important;
+    background-color: #00000047;
 }
 
 .btn-outline-success {
-    color: #bcc900;
+    color: #4a4a4a;
     border-color: #ffffff00;
-    background-color: #1e1d00;
+    background-color: #aab2ac;
 }
 
 .navbar-light .navbar-toggler {
@@ -457,6 +486,7 @@ div img {
     text-align: center;
     font-size: 70px;
     font-family: 'Staatliches', cursive;
+    color: #000000;
 }
 
 .info-mapa {
@@ -482,19 +512,28 @@ div img {
     border-radius: 0% 10%;
 }
 
-.textarea {
+.textarea-personal {
     resize: none;
-    padding: 20px 40px;
+    padding: 0px 90px;
     outline: none;
-    border: solid 2px #003002;
+    border: solid 1px #000000;
     margin: 5px;
+    font-size: small;
+    line-height: initial;
+    text-align: center;
 }
 
-.form-control {
+.form-control-personal {
     outline: none;
-    border: solid 1px #003002;
-    padding: 5px 55px;
+    border: solid 1px #000000;
+    padding: 3px 65px;
     margin: 5px;
+    font-size: 18px;
+}
+
+.row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
 }
 
 .enviar-limpiar {
@@ -913,16 +952,15 @@ footer img {
 
     .info-personal {
         margin: 0px 0px;
-        padding: 10px;
+        padding: 5px;
         font-size: 20px;
         letter-spacing: 2px;
         border: none;
         border-radius: 2%;
     }
 
-    .textarea {
-        padding: 15px 25px;
-        border: solid 4px #003002;
+    .textarea-personal {
+        padding: 15px 45px;
         margin: 5px;
     }
 
@@ -1120,15 +1158,15 @@ footer img {
 
     .info-personal {
         margin: 0px 0px;
-        padding: 0px 60px;
+        padding: 0px 35px;
         font-size: 20px;
         letter-spacing: 2px;
         border: none;
+        border-radius: 2%;
     }
 
-    .textarea {
-        padding: 15px 25px;
-        border: solid 4px #003002;
+    .textarea-personal {
+        padding: 15px 75px;
         margin: 5px;
     }
 
@@ -1224,6 +1262,21 @@ footer img {
     }
 
     /*Contactos*/
+
+    .info-personal {
+        padding: 25px 10px;
+        border: none;
+        border-radius: 2%;
+    }
+
+    .mapa {
+        border: none;
+        border-radius: 2%;
+    }
+
+    .textarea-personal {
+        padding: 0px 160px;
+    }
 
     .info-mapa {
         display: grid;
@@ -1374,6 +1427,17 @@ footer img {
 
     /*Contactos*/
 
+    .info-personal {
+        padding: 25px 10px;
+        border: none;
+        border-radius: 2%;
+    }
+
+    .textarea-personal {
+        resize: none;
+        padding: 0px 145px;
+    }
+
     .info-mapa {
         display: grid;
         grid-column-gap: 20px;
@@ -1381,6 +1445,11 @@ footer img {
         justify-content: space-around;
         text-align: center;
         align-items: stretch;
+    }
+
+    .mapa {
+        border: none;
+        border-radius: 2%;
     }
 
     /*----subHome---*/
@@ -1521,22 +1590,21 @@ footer img {
     /*----contactanos----*/
 
     .info-personal {
-        padding: 35px 90px;
-        font-size: 35px;
+        padding: 10px 90px;
     }
 
-    .form-control {
+    .form-control-personal {
         font-size: 20px;
-        padding: 10px 65px;
+        padding: 3px 100px;
     }
 
-    .textarea {
+    .textarea-personal {
         font-size: 20px;
-        padding: 30px 70px;
+        padding: 0 60px;
     }
 
     .mapa {
-        padding: 90px 0px;
+        padding: 65px 0px;
         font-size: 35px;
     }
 
