@@ -27,6 +27,7 @@ p {
 h2 {
     font-size: 150%;
     font-weight: 600;
+    margin-bottom: 0;
 }
 
 h4 {
@@ -125,6 +126,10 @@ header {
 .bg-danger {
     background-color: #230505 !important;
     box-shadow: black 0px 0px 20px 1px;
+        position: sticky;
+        width: -webkit-fill-available;
+        top: 0;
+        z-index: 9999;
 }
 
 .navbar-light .navbar-brand {
@@ -143,7 +148,7 @@ header {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #ffdbdbe0;
+    color: #ffffffe0;
     text-shadow: 0px 0px 5px #ff1a1a;
     background-image: linear-gradient(transparent 0%, transparent 90%,#680000 90%,#680000 100%);
     background-repeat: no-repeat;
@@ -163,6 +168,10 @@ header {
     background-color: #00000047;
 }
 
+.form-label {
+    margin-bottom: 0px;
+}
+
 .btn-outline-success {
     color: #4a4a4a;
     border-color: #ffffff00;
@@ -170,7 +179,7 @@ header {
 }
 
 .navbar-light .navbar-toggler {
-    color: #700002;
+    color: #4e4e4e;
     background-color: #727c76;
 }
 
@@ -184,14 +193,14 @@ header {
 
 .marvel-text {
     box-shadow: black inset 0px 0px 40px 25px;
-    padding: 60px;
+    padding: 50px;
     height: 100%;
     width: 100%;
     text-align: center;
     font-size: 90px;
     font-family: 'Staatliches', cursive;
     color: #b00505;
-    text-shadow: 0px 5px 5px #4d0000;
+    text-shadow: 0px 5px 2px #4d0000;
     background-image: url('./fondos/marvel.jpg');
     background-size: cover;
     background-attachment: fixed;
@@ -200,7 +209,7 @@ header {
 .fondo-comic {
     display: flex;
     justify-content: space-around;
-    background-color: #272727;
+    background-color: #242424;
     padding: 25px 10px;
     box-shadow: black inset 0px 0px 15px 5px;
 }
@@ -208,10 +217,10 @@ header {
 /*Fondo de las imagenes*/
 
 .fondo-imagenes {
-    background-color: #080808;
+    background-color: #040404;
     border-radius: 15px;
     box-shadow: black 0px 0px 15px 5px;
-    border: groove 3px rgb(167 167 167);
+    border: groove 3px #d7d7d7;
     -webkit-transition: 0.1s ease-in-out;
     transition: 0.1s ease-in-out;
 }
@@ -232,17 +241,17 @@ header {
 }
 
 .precio {
-    background-color: #511e02;
+    background-color: #301100;
     border: outset #fd6a00;
     border-radius: 15px;
     cursor: pointer;
-    color: #fafafa;
+    color: #b33f00;
     margin: 15px 70px -10px;
     padding: 7px 18px;
     font-size: 25px;
     text-align: center;
     font-family: 'Staatliches', cursive;
-    text-shadow: 0px 0px 5px #280e00;
+    text-shadow: 0px 0px 5px #000000;
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
 }
@@ -259,12 +268,73 @@ header {
 @keyframes pulsate {
     0%{
     box-shadow: 0 0 15px #ac4f0c, 0 0 30px #f73600;
-    background-color: #fd6a00;
+    background-color: #602800;
     }
 }
 
+.precio-ofertas {
+    background-color: #301100;
+    border: outset #fd6a00;
+    border-radius: 15px;
+    cursor: pointer;
+    color: #b33f00;
+    margin: 15px 70px -10px;
+    padding: 7px 18px;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    text-shadow: 0px 0px 5px #000000;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.precio-ofertas::before {
+    content: "$999";
+    font-size: 15px;
+    text-decoration:line-through;
+    color: #622503;
+    padding: 3px;
+}
+
+.cartel {
+    color: rgb(218, 0, 0);
+    padding: 5px 5px;
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 197px;
+    width: 75px;
+    background-color: #1a0909;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: black -5px 5px 7px 3px;
+}
+
+.precio-ofertas:hover{
+    -webkit-animation: pulsate 1s ease-in-out;
+    animation: pulsate 1s ease-in-out;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+@keyframes pulsate {
+    0%{
+    box-shadow: 0 0 15px #ac4f0c, 0 0 30px #f73600;
+    background-color: #602800;
+    }
+}
+
+.descuento {
+    font-size: 15px;
+    color: #303030;
+    text-shadow: 0px 1px 2px #000000;
+}
+
 .fondo-imagenes p {
-    color: #6f6f6f;
+    color: #b5b5b5;
     font-size: 20px;
     padding: 7px 0px 0px 0px;
     text-align: center;
@@ -275,14 +345,14 @@ header {
 
 .dc-text {
     box-shadow: black inset 0px 0px 40px 25px;
-    padding: 60px;
+    padding: 50px;
     height: 100%;
     width: 100%;
     text-align: center;
     font-size: 90px;
     font-family: 'Staatliches', cursive;
     color: #0074da;
-    text-shadow: 0px 5px 5px #001f3a;
+    text-shadow: 0px 5px 2px #001f3a;
     background-image: url('./fondos/dc.jpg');
     background-size: cover;
     background-attachment: fixed;
@@ -296,14 +366,14 @@ header {
 
 .text {
     box-shadow: black inset 0px 0px 40px 25px;
-    padding: 60px;
+    padding: 50px;
     height: 100%;
     width: 100%;
     text-align: center;
     font-size: 90px;
     font-family: 'Staatliches', cursive;
     color: #c5c5c5;
-    text-shadow: 0px 5px 5px #222222;
+    text-shadow: 0px 5px 2px #111111;
     background-image: url('./fondos/fondo\ main\ 1.jpg');
     background-size: cover;
     background-attachment: fixed;
@@ -319,7 +389,7 @@ header {
     font-size: 90px;
     font-family: 'Staatliches', cursive;
     color: #ffffff;
-    text-shadow: 0px 5px 5px #000000;
+    text-shadow: 0px 5px 2px #000000;
     background-image: url('./fondos/fondo1.jpg');
     background-size: cover;
     background-attachment: fixed;
@@ -516,16 +586,22 @@ div img {
     resize: none;
     padding: 0px 90px;
     outline: none;
-    border: solid 1px #000000;
     margin: 5px;
     font-size: small;
     line-height: initial;
     text-align: center;
+    border-radius: 10px;
+}
+
+.form-control-personal-1 {
+    outline: none;
+    padding: 5px 75px;
+    margin: 5px;
+    font-size: 15px;
 }
 
 .form-control-personal {
     outline: none;
-    border: solid 1px #000000;
     padding: 3px 65px;
     margin: 5px;
     font-size: 18px;
@@ -733,7 +809,6 @@ footer img {
     color: #000000;
     text-align: left;
     font-family: 'Staatliches', cursive;
-    font-size: 23px;
     padding: 20px
 }
 
@@ -814,6 +889,16 @@ footer img {
     .imagen-header {
         max-width: 100%;
         margin: 0%;
+        padding: 5px;
+    }
+
+/*----nav----*/
+
+    .bg-danger {
+        position: sticky;
+        width: -webkit-fill-available;
+        top: 0;
+        z-index: 9999;
     }
 
 /*----home----*/
@@ -823,6 +908,7 @@ footer img {
         font-size: 45px;
         box-shadow: black inset 0px 0px 30px 20px;
         background-attachment: scroll;
+        color: #ff0000;
     }
         
     .fondo-comic {
@@ -831,6 +917,7 @@ footer img {
         padding: 2px 20px;
         flex-wrap: wrap;
         align-content: stretch;
+        box-shadow: black inset 0px 0px 10px 0px;
     }
         
     .fondo-imagenes {
@@ -852,6 +939,7 @@ footer img {
         font-size: 45px;
         box-shadow: black inset 0px 0px 30px 20px;
         background-attachment: scroll;
+        color: #0088ff;
     }
     
     .text {
@@ -859,6 +947,7 @@ footer img {
         font-size: 45px;
         box-shadow: black inset 0px 0px 30px 20px;
         background-attachment: scroll;
+        color: #ffffff;
     }
         
     .text-all {
@@ -866,6 +955,7 @@ footer img {
         font-size: 45px;
         box-shadow: black inset 0px 0px 30px 20px;
         background-attachment: scroll;
+        color: #ffffff;
     }
 
     .merch-text {
@@ -1030,6 +1120,15 @@ footer img {
     .imagen-header {
         max-width: 100%;
         margin: 0%;
+    }
+
+    /*----nav----*/
+
+    .bg-danger {
+        position: sticky;
+        width: -webkit-fill-available;
+        top: 0;
+        z-index: 9999;
     }
 
     /*----home----*/
@@ -1204,10 +1303,6 @@ footer img {
         font-size: 25px;
     }
 
-    .newsletter {
-        font-size: 25px;
-    }
-
     .pago {
         font-size: 30px;
         padding: 15px 50px;
@@ -1235,6 +1330,17 @@ footer img {
         font-size: 100%;
     }
 
+        /*----nav----*/
+
+    .bg-danger {
+        position: sticky;
+        width: -webkit-fill-available;
+        top: 0;
+        z-index: 9999;
+    }
+
+    /*----mian----*/
+
     .fondo-comic {
         display: flex;
         flex-direction: row;
@@ -1248,7 +1354,16 @@ footer img {
         margin: 15px 5px;
     }
 
+    .cartel {
+        margin-left: 155px;
+    }
+
     .precio {
+        margin: 15px 50px -10px;
+        font-size: 20px;
+    }
+
+    .precio-ofertas {
         margin: 15px 50px -10px;
         font-size: 20px;
     }
@@ -1363,7 +1478,7 @@ footer img {
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-Dispositivo LaptopL-1390px-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-@media screen and (min-width: 1025px) and (max-width: 1390px) {
+@media screen and (min-width: 1025px) and (max-width: 1400px) {
 
     .grid-index {
         display: grid;
@@ -1380,6 +1495,15 @@ footer img {
 
     h2 {
         font-size: 130%;
+    }
+
+    /*----nav----*/
+
+    .bg-danger {
+        position: sticky;
+        width: -webkit-fill-available;
+        top: 0;
+        z-index: 9999;
     }
 
     .marvel-text {
@@ -1408,11 +1532,20 @@ footer img {
     }
 
     .fondo-imagenes {
-        width: 225px;
+        width: 244px;
         margin: 15px 5px;
     }
 
+    .cartel {
+        margin-left: 155px;
+    }
+
     .precio {
+        margin: 15px 50px -10px;
+        font-size: 20px;
+    }
+
+    .precio-ofertas {
         margin: 15px 50px -10px;
         font-size: 20px;
     }
@@ -1452,37 +1585,20 @@ footer img {
         border-radius: 2%;
     }
 
-    /*----subHome---*/
+    /*----SubHome----*/
+
+    .subContenido {
+        padding: 25px 30px;
+    }
+
+    .emailLargo {
+        width: 500px;
+    }
 
     /*----footer----*/
 
     .footer-1 {
-        display: grid;
-        grid-template-columns: auto;
-    }
-    
-    .newsletter {
-        padding: 0px;
-    }
-
-    .redes {
-        grid-area: 1 / 2 / 2 / 3;
-        margin: 15px 70px;
-        padding: 10px 45px;
-    }
-
-    .contactanos {
-        grid-area: 2 / 2 / 3 / 3;
-    }
-
-    .newsletter {
-        grid-area: 2 / 3 / 3 / 4;
-    }
-
-    .pago {
-        grid-area: 1 / 3 / 2 / 4;
-        margin: 15px 70px;
-        padding: 10px 25px;
+        grid-template-columns: 290px 220px 220px 290px;
     }
 }
 
@@ -1501,28 +1617,17 @@ footer img {
         auto;
         }
 
+    /*----nav----*/
+
+    .bg-danger {
+        position: sticky;
+        width: -webkit-fill-available;
+        top: 0;
+        z-index: 9999;
+    }
+
     nav ul li {
         font-size: 30px;
-    }
-
-    .buscar {
-        font-size: 1.8rem;
-        line-height: 53px;
-    }
-
-    .icon {
-        width: 55px;
-        font-size: 1.8rem;
-        height: 55px;
-    }
-
-    .search-box {
-        box-shadow: #954040 0px 0px 8px 2px;
-        position: absolute;
-        right: 0.7%;
-        margin-top: -51px;
-        background: #2C3441;
-        border-radius: 40px;
     }
 
     /*----home----*/
@@ -1544,8 +1649,12 @@ footer img {
         width: 325px;
     }
 
+    .cartel {
+        margin-left: 255px;
+    }
+
     .fondo-imagenes p {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .precio {
@@ -1574,7 +1683,7 @@ footer img {
     }
 
     .fondo-imagenes-libros p {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     /*---merch----*/
@@ -1584,7 +1693,7 @@ footer img {
     }
 
     .fondo-imagenes-merch p {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     /*----contactanos----*/
@@ -1671,10 +1780,6 @@ footer img {
 
     .contactanos p {
         font-size: 30px;
-    }
-
-    .newsletter {
-        font-size: 33px;
     }
 
     .newsletter h5 {
