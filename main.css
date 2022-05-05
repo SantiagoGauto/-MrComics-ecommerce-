@@ -870,9 +870,9 @@ footer img {
     text-shadow: 0px 0px 10px #000000;
 }
 
-/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-Dispositivo Mobil-425px-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-Dispositivo Mobil-575px-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-@media screen and (max-width: 425px) {
+@media screen and (min-width: 0px) and (max-width: 575px) {
     .grid-index {
         display: grid;
         grid-template:
@@ -903,6 +903,60 @@ footer img {
 
 /*----home----*/
 
+    .card:not(:first-child) {
+        display: none;
+    }
+
+    .carousel-control-next, .carousel-control-prev {
+        background-color: #000000c2;
+        width: 5%;
+    }
+
+    .carousel-item {
+        background-color: #242424;
+        box-shadow: black inset 0px 0px 20px 0px;
+    }
+
+    .card {
+        margin: 30px;
+        background-color: #040404;
+        border: groove 3px #d7d7d7;
+        border-radius: 40px;
+        box-shadow: black 0px 0px 15px 7px;
+        -webkit-transition: 0.1s ease-in-out;
+        transition: 0.1s ease-in-out;
+    }
+
+    .card:hover {
+        -webkit-box-shadow: 0 0 20px #111;
+        box-shadow: #3a3a3a 0px 0px 10px 8px;
+        -webkit-transform: scale(1.03);
+        transform: scale(1.03);
+        -webkit-transition: 0.1s ease-in-out;
+        transition: 0.1s ease-in-out;
+    }
+
+    .card-img, .card-img-top {
+        border-top-left-radius: 35px;
+        border-top-right-radius: 35px;
+    }
+
+    .card-body {
+        padding: 0px;
+    }
+
+    .card-body p {
+        color: #b5b5b5;
+    font-size: 20px;
+    padding: 7px 0px 0px 0px;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    }
+
+    .precio {
+        margin: 15px 50px -10px;
+    }
+    
     .marvel-text {
         padding: 15px;
         font-size: 45px;
@@ -912,12 +966,7 @@ footer img {
     }
         
     .fondo-comic {
-        display: flex;
-        flex-direction: row;
-        padding: 2px 20px;
-        flex-wrap: wrap;
-        align-content: stretch;
-        box-shadow: black inset 0px 0px 10px 0px;
+        display: none;
     }
         
     .fondo-imagenes {
@@ -1093,7 +1142,7 @@ footer img {
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-Dispositivo Mobil-768px-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-@media screen and (min-width: 426px) and (max-width: 768px) {
+@media screen and (min-width: 576px) and (max-width: 768px) {
 
     .grid-index {
         display: grid;
