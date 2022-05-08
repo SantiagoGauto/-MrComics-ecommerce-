@@ -927,7 +927,7 @@ footer img {
     }
 
     .card {
-        margin: 30px;
+        margin: 25px;
         background-color: #040404;
         border: groove 3px #d7d7d7;
         border-radius: 40px;
@@ -1030,7 +1030,7 @@ footer img {
         max-height: 345px;
     }
 
-/*----merch----*/
+    /*----merch----*/
 
     .fondo-imagenes-merch {
         margin: 20px 0px;
@@ -1044,6 +1044,14 @@ footer img {
     .fondo-imagenes-merch p {
         padding: 0px 0px 0px 0px;
         font-size: 20px;
+    }
+
+    /*----merch----*/
+
+    .cartel {
+        padding: 5px;
+        border-top-right-radius: 35px;
+        border-top-left-radius: 35px;
     }
 
     /*----subHome---*/
@@ -1414,6 +1422,10 @@ footer img {
     .precio-ofertas {
         margin: 15px 35px -10px;
         font-size: 15px;
+    }
+
+    .precio-ofertas::before {
+        font-size: 10px;
     }
 
     /*Contactos*/
