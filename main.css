@@ -185,26 +185,7 @@ header {
 
 /*------------------------------------------------------MAIN------------------------------------------------------*/
 
-/*Main marvel*/
-
-.section-1 {
-    grid-area: section-1;
-}
-
-.marvel-text {
-    box-shadow: black inset 0px 0px 40px 25px;
-    padding: 50px;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    font-size: 90px;
-    font-family: 'Staatliches', cursive;
-    color: #b00505;
-    text-shadow: 0px 5px 2px #4d0000;
-    background-image: url('./fondos/marvel.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-}
+/*Fondo de las imagenes*/
 
 .fondo-comic {
     display: flex;
@@ -214,9 +195,9 @@ header {
     box-shadow: black inset 0px 0px 15px 5px;
 }
 
-/*Fondo de las imagenes*/
-
 .fondo-imagenes {
+    margin: 5px;
+    width: calc(100%/5) !important;
     background-color: #040404;
     border-radius: 15px;
     box-shadow: black 0px 0px 15px 5px;
@@ -226,18 +207,31 @@ header {
 }
 
 .fondo-imagenes:hover {
-        -webkit-box-shadow: 0 0 20px #111;
-        box-shadow: #3a3a3a 0px 0px 10px 8px;
-        -webkit-transform: scale(1.03);
-        transform: scale(1.03);
-        -webkit-transition: 0.1s ease-in-out;
-        transition: 0.1s ease-in-out;
-    }
+    -webkit-box-shadow: 0 0 20px #111;
+    box-shadow: #3a3a3a 0px 0px 10px 8px;
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+    -webkit-transition: 0.1s ease-in-out;
+    transition: 0.1s ease-in-out;
+}
 
-.fondo-imagenes img {
+.body-fondo-imagenes {
+    padding: 0px;
+}
+
+.fondo-imagenes img{
+    max-width: 100%;
+    max-height: 100%;
     border-top-right-radius: 12px;
     border-top-left-radius: 12px;
-    padding: 0%;
+}
+
+.fondo-imagenes p {
+    color: #b5b5b5;
+    font-size: 20px;
+    padding: 7px 0px 0px 0px;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
 }
 
 .precio {
@@ -248,7 +242,7 @@ header {
     color: #b33f00;
     margin: 15px 70px -10px;
     padding: 7px 18px;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     font-family: 'Staatliches', cursive;
     text-shadow: 0px 0px 5px #000000;
@@ -272,76 +266,32 @@ header {
     }
 }
 
-.precio-ofertas {
-    background-color: #301100;
-    border: outset #fd6a00;
-    border-radius: 15px;
-    cursor: pointer;
-    color: #b33f00;
-    margin: 15px 70px -10px;
-    padding: 7px 18px;
-    font-size: 25px;
+/*Main marvel*/
+
+.section-1 {
+    grid-area: section-1;
+}
+
+.marvel-text {
+    box-shadow: black inset 0px 0px 40px 25px;
+    padding: 50px;
+    height: 100%;
+    width: 100%;
     text-align: center;
+    font-size: 90px;
     font-family: 'Staatliches', cursive;
-    text-shadow: 0px 0px 5px #000000;
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-}
-
-.precio-ofertas::before {
-    content: "$999";
-    font-size: 15px;
-    text-decoration:line-through;
-    color: #622503;
-    padding: 3px;
-}
-
-.cartel {
-    color: rgb(218, 0, 0);
-    padding: 5px 5px;
-    font-family: 'Staatliches', cursive;
-    font-size: 20px;
-    position: absolute;
-    margin-top: 10px;
-    margin-left: 197px;
-    width: 75px;
-    background-color: #1a0909;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    box-shadow: black -5px 5px 7px 3px;
-}
-
-.precio-ofertas:hover{
-    -webkit-animation: pulsate 1s ease-in-out;
-    animation: pulsate 1s ease-in-out;
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-}
-
-@keyframes pulsate {
-    0%{
-    box-shadow: 0 0 15px #ac4f0c, 0 0 30px #f73600;
-    background-color: #602800;
-    }
-}
-
-.descuento {
-    font-size: 15px;
-    color: #303030;
-    text-shadow: 0px 1px 2px #000000;
-}
-
-.fondo-imagenes p {
-    color: #b5b5b5;
-    font-size: 20px;
-    padding: 7px 0px 0px 0px;
-    text-align: center;
-    font-family: 'Staatliches', cursive;
+    color: #b00505;
+    text-shadow: 0px 5px 2px #4d0000;
+    background-image: url('./fondos/marvel.jpg');
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 /*Main dc*/
+
+.section-2 {
+    grid-area: section-2;
+}
 
 .dc-text {
     box-shadow: black inset 0px 0px 40px 25px;
@@ -360,8 +310,8 @@ header {
 
 /*Main comics*/
 
-.section-2 {
-    grid-area: section-2;
+.section-3 {
+    grid-area: section-3;
 }
 
 .text {
@@ -396,18 +346,19 @@ header {
     background-repeat: no-repeat;
 }
 
+/*todas las imagenes*/
 
 div img {
     width: 100%;
 }
 
-.section-3 {
-    grid-area: section-3;
-}
+/*Libros*/
 
 .fondo-imagenes-libros {
     background-color: #080808;
+    margin: 5px;
     border-radius: 0px 70px;
+    width: calc(100%/5) !important;
     box-shadow: #000000 0px 0px 15px 5px;
     border: inset 3px rgb(167 167 167);
     -webkit-transition: 0.1s ease-in-out;
@@ -425,26 +376,27 @@ div img {
 
 .fondo-imagenes-libros img {
     border-radius: 0px 70px;
-    padding: 0%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .fondo-imagenes-libros p {
-    color: #6f6f6f;
-    padding: 0px 0px 20px 0px;
+    color: #b5b5b5;
+    padding: 5px 0px 10px 0px;
     font-weight: 600;
     text-align: center;
     font-family: 'Staatliches', cursive;
     font-size: 15px;
 }
 
-.imagen-libros {
-    max-width: 266px;
-    max-height: 345px;
-}
+
+/*Merch*/
 
 .fondo-imagenes-merch {
     background-color: #080808;
-    border-radius: 10px;
+    border-radius: 12px;
+    margin: 5px;
+    width: calc(100%/5) !important;
     box-shadow: #000000 0px 0px 15px 5px;
     border: groove 3px rgb(167 167 167);
     -webkit-transition: 0.1s ease-in-out;
@@ -461,22 +413,79 @@ div img {
 }
 
 .fondo-imagenes-merch img {
-    border-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
     padding: 0%;
 }
 
 .fondo-imagenes-merch p {
-    color: #6f6f6f;
-    padding: 0px 0px 20px 0px;
+    color: #b5b5b5;
+    padding: 5px 0px 5px 0px;
     font-weight: 600;
     text-align: center;
     font-family: 'Staatliches', cursive;
     font-size: 15px;
 }
 
-.imagen-merch {
-    width: 100%;
+/* ofertas */
+
+.cartel {
+    text-align: center;
+    color: rgb(218, 0, 0);
+    background-color: #1a0909;
+    padding: 2px;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
 }
+
+.imagenes-ofertas {
+    border-top-right-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+}
+
+.precio-ofertas {
+    background-color: #301100;
+    border: outset #fd6a00;
+    border-radius: 15px;
+    cursor: pointer;
+    color: #b33f00;
+    margin: 15px 70px -10px;
+    padding: 7px 18px;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    text-shadow: 0px 0px 5px #000000;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.precio-ofertas::before {
+    content: "$999";
+    font-size: 15px;
+    text-decoration:line-through;
+    color: #622503;
+    padding: 3px;
+}
+
+.precio-ofertas:hover{
+    -webkit-animation: pulsate 1s ease-in-out;
+    animation: pulsate 1s ease-in-out;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+@keyframes pulsate {
+    0%{
+    box-shadow: 0 0 15px #ac4f0c, 0 0 30px #f73600;
+    background-color: #602800;
+    }
+}
+
+/*SubHome*/
 
 .subHome {
     grid-area: subHome;
@@ -870,9 +879,9 @@ footer img {
     text-shadow: 0px 0px 10px #000000;
 }
 
-/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-Dispositivo Mobil-575px-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-Dispositivo Mobil-767px-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-@media screen and (min-width: 0px) and (max-width: 575px) {
+@media screen and (max-width: 767px) {
     .grid-index {
         display: grid;
         grid-template:
@@ -909,7 +918,7 @@ footer img {
 
     .carousel-control-next, .carousel-control-prev {
         background-color: #000000c2;
-        width: 5%;
+        width: 3%;
     }
 
     .carousel-item {
@@ -923,17 +932,6 @@ footer img {
         border: groove 3px #d7d7d7;
         border-radius: 40px;
         box-shadow: black 0px 0px 15px 7px;
-        -webkit-transition: 0.1s ease-in-out;
-        transition: 0.1s ease-in-out;
-    }
-
-    .card:hover {
-        -webkit-box-shadow: 0 0 20px #111;
-        box-shadow: #3a3a3a 0px 0px 10px 8px;
-        -webkit-transform: scale(1.03);
-        transform: scale(1.03);
-        -webkit-transition: 0.1s ease-in-out;
-        transition: 0.1s ease-in-out;
     }
 
     .card-img, .card-img-top {
@@ -1140,9 +1138,9 @@ footer img {
 
 }
 
-/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-Dispositivo Mobil-768px-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-Dispositivo Laptop-1024px-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-@media screen and (min-width: 576px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
     .grid-index {
         display: grid;
@@ -1161,14 +1159,12 @@ footer img {
         font-size: 100%;
     }
 
-    header {
-        padding: 0px;
-        width: -webkit-fill-available;
-    }
-    
+    /*----jeader----*/
+
     .imagen-header {
-        max-width: 100%;
-        margin: 0%;
+        padding: 5px;
+        margin: 0px auto -40px;
+        max-width: 50%;
     }
 
     /*----nav----*/
@@ -1180,249 +1176,64 @@ footer img {
         z-index: 9999;
     }
 
-    /*----home----*/
+    /*----mian----*/
 
     .marvel-text {
         padding: 15px;
-        font-size: 63px;
-        box-shadow: black inset 0px 0px 30px 20px;
-        background-attachment: scroll;
+        font-size: 70px;
     }
-    
-    .fondo-comic {
-        display: flex;
-        flex-direction: row;
-        padding: 2px 20px;
-        flex-wrap: wrap;
-        align-content: stretch;
-    }
-        
-    .fondo-imagenes {
-        margin: 15px 10px;
-        }
-    
+
     .dc-text {
         padding: 15px;
-        font-size: 63px;
-        box-shadow: black inset 0px 0px 30px 20px;
-        background-attachment: scroll;
+        font-size: 70px;
     }
-    
+
     .text {
         padding: 15px;
-        font-size: 63px;
-        box-shadow: black inset 0px 0px 30px 20px;
-        background-attachment: scroll;
+        font-size: 70px;
     }
-        
+
     .text-all {
         padding: 15px;
-        font-size: 45px;
-        box-shadow: black inset 0px 0px 30px 20px;
-        background-attachment: scroll;
+        font-size: 70px;
     }
 
-    .merch-text {
-        font-size: 30px;
-    }
+    /*fondos*/
 
-/*----libros----*/
-
-    .fondo-imagenes-libros {
-        margin: 20px 30%;
-    }
-    
-    .fondo-imagenes-libros img {
-        max-width: 100%;
-        max-height: 100%;
-    }
-    
-    .fondo-imagenes-libros p {
-        font-size: 25px;
-        padding: 5px 0px 0px 0px;
-    }
-    
-    .imagen-libros {
-        max-width: 266px;
-        max-height: 345px;
-    }
-
-/*----merch----*/
-
-    .fondo-imagenes-merch {
-        margin: 20px 0px;
-    }
-    
-    .fondo-imagenes-merch img {
-        max-width: 100%;
-        max-height: 100%;
-    }
-    
-    .fondo-imagenes-merch p {
-        padding: 0px 0px 0px 0px;
-        font-size: 20px;
-    }
-
-    /*----subHome---*/
-
-    .subContenido {
-        display: flex;
-        width: 100%;
-        padding: 10px 5px;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .subContenido1 {
-        max-width: 100%;
-        text-align: center;
-    }
-    
-    .subContenido1 h3 {
-        font-size: 35px;;
-    }
-    
-    .subContenido1 p {
-        padding: 10px 0px;
-        font-size: 15px;
-    }
-    
-    .subContenido2 {
-        margin-top: 0px;
-        margin-left: 0px;
-    }
-    
-    .emailLargo {
-        width: 270px;
-    }
-    
-    /*Contactos*/
-
-    .info-mapa {
-        display: grid;
-        grid-template-columns: auto;
-        margin: 10px;
-    }
-
-    .info-personal {
-        margin: 0px 0px;
-        padding: 0px 35px;
-        font-size: 20px;
-        letter-spacing: 2px;
-        border: none;
-        border-radius: 2%;
-    }
-
-    .textarea-personal {
-        padding: 15px 75px;
-        margin: 5px;
-    }
-
-    .mapa {
-        display: none;
-    }
-
-    /*----footer----*/
-
-    .texto-footer {
-        font-size: 15px;
-        padding: 10px;
-    }
-
-    .texto-footer h2 {
-        font-size: 60px;
-    }
-
-    .texto-footer span {
-        color: #ffffff;
-    }
-
-    .footer-1 {
-        display: grid;
-        grid-template-columns: auto;
-    }
-
-    .redes {
-        font-size: 30px;
-        padding: 10px 75px;
-    }
-
-    .contactanos {
-        text-align: center;
-        font-size: 25px;
-    }
-
-    .pago {
-        font-size: 30px;
-        padding: 15px 50px;
-    }
-}
-
-/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-Dispositivo Laptop-1024px-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-
-    .grid-index {
-        display: grid;
-        grid-template:
-        "header"
-        "nav"
-        "section-1"
-        "section-2"
-        "section-3"
-        "subHome"
-        "footer" /
-        auto;
-        }
-
-    h2 {
-        font-size: 100%;
-    }
-
-        /*----nav----*/
-
-    .bg-danger {
-        position: sticky;
-        width: -webkit-fill-available;
-        top: 0;
-        z-index: 9999;
-    }
-
-    /*----mian----*/
-
-    .fondo-comic {
-        display: flex;
-        flex-direction: row;
-        padding: 2px 20px;
-        flex-wrap: wrap;
-        align-content: stretch;
-    }
-
-    .fondo-imagenes {
-        width: 225px;
-        margin: 15px 5px;
-    }
-
-    .cartel {
-        margin-left: 155px;
+    .fondo-imagenes p {
+        font-size: 10px;
     }
 
     .precio {
-        margin: 15px 50px -10px;
-        font-size: 20px;
+        margin: 15px 25px -10px;
+        font-size: 10px;
     }
 
-    .precio-ofertas {
-        margin: 15px 50px -10px;
-        font-size: 20px;
-    }
+    /*libros*/
 
     .fondo-imagenes-libros {
-        margin: 20px;
+        margin: 0px;
     }
 
-    .fondo-imagenes-merch {
-        margin: 20px 0px;
+    .fondo-imagenes-libros p {
+        font-size: 10px;
+    }
+
+    /*merch*/
+
+    .fondo-imagenes-merch p {
+        font-size: 10px;
+    }
+
+    /*ofertas*/
+
+    .precio-ofertas {
+        margin: 15px 25px -10px;
+        font-size: 10px;
+    }
+
+    .precio-ofertas::before {
+        font-size: 5px;
     }
 
     /*Contactos*/
@@ -1555,56 +1366,54 @@ footer img {
         z-index: 9999;
     }
 
+    /*----mian----*/
+
     .marvel-text {
-        padding: 40px;
+        padding: 35px;
         font-size: 85px;
     }
 
     .dc-text {
-        padding: 40px;
+        padding: 35px;
         font-size: 85px;
     }
 
     .text {
-        padding: 40px;
+        padding: 35px;
         font-size: 85px;
     }
 
-    /*----home----*/
-    
-    .fondo-comic {
-        display: flex;
-        flex-direction: row;
-        padding: 2px 20px;
-        flex-wrap: wrap;
-        align-content: stretch;
+    .text-all {
+        padding: 35px;
+        font-size: 85px;
     }
 
-    .fondo-imagenes {
-        width: 244px;
-        margin: 15px 5px;
-    }
+    /*home*/
 
-    .cartel {
-        margin-left: 170px;
+    .fondo-imagenes p {
+        font-size: 15px;
     }
 
     .precio {
-        margin: 15px 50px -10px;
-        font-size: 20px;
+        margin: 15px 35px -10px;
+        font-size: 15px;
+    }
+
+    /*libros*/
+
+    .fondo-imagenes-libros p {
+        font-size: 15px;
+    }
+
+    /*Merch*/
+
+    .fondo-imagenes-merch p {
+        font-size: 15px;
     }
 
     .precio-ofertas {
-        margin: 15px 50px -10px;
-        font-size: 20px;
-    }
-
-    .fondo-imagenes-libros {
-        margin: 20px;
-    }
-
-    .fondo-imagenes-merch {
-        margin: 20px 0px;
+        margin: 15px 35px -10px;
+        font-size: 15px;
     }
 
     /*Contactos*/
@@ -1686,20 +1495,8 @@ footer img {
         font-size: 115px;
     }
 
-    .fondo-comic {
-        display: flex;
-        flex-direction: row;
-        padding: 20px 0px;
-        flex-wrap: wrap;
-        align-content: stretch;
-    }
-
     .fondo-imagenes {
         width: 325px;
-    }
-
-    .cartel {
-        margin-left: 255px;
     }
 
     .fondo-imagenes p {
@@ -1722,27 +1519,20 @@ footer img {
 
     /*----libros----*/
 
-    .fondo-imagenes-libros {
-        width: 20%;
-    }
-
-    .imagen-libros {
-        max-width: 380px;
-        max-height: 500px;
-    }
-
     .fondo-imagenes-libros p {
         font-size: 20px;
     }
 
     /*---merch----*/
 
-    .fondo-imagenes-merch {
-        width: 18%;
-    }
-
     .fondo-imagenes-merch p {
         font-size: 20px;
+    }
+
+    /*---ofertas----*/
+
+    .precio-ofertas {
+        font-size: 30px;
     }
 
     /*----contactanos----*/
