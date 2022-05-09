@@ -1,0 +1,208 @@
+.fa-angles {
+	margin: 0 49%;
+	padding-top: 10px;
+	display: grid;
+	justify-content: center;
+	color: #03004300;
+	-webkit-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+	&:hover {
+		-webkit-transform: translateY(-3px);
+		transform: translateY(-3px);
+		-webkit-transition: 0.3s ease-in-out;
+		transition: 0.3s ease-in-out;
+		filter: drop-shadow(0px 8px 5px $black-color);
+	}
+}
+.fa-angles-up {
+	color: #9f9d91;
+	font-size: 35px;
+	filter: drop-shadow(0px 2px 2px $black-color);
+	-webkit-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+}
+footer {
+	grid-area: footer;
+	box-shadow: inset black 0px 0px 6px 1px;
+	background-color: #005a61;
+	img {
+		margin: 3px;
+		max-width: 40px;
+		padding: 0%;
+	}
+}
+.texto-footer {
+	font-family: $font-family;
+	text-align: center;
+	font-size: 22px;
+	h2 {
+		color: $black-color;
+		text-align: center;
+		font-size: 50px;
+		text-shadow: 0px 3px 5px #bdbdbd;
+		margin-bottom: 0;
+	}
+	p {
+		color: $black-color;
+	}
+	span {
+		color: #ffffff;
+	}
+}
+.footer-1 {
+	display: grid;
+	justify-content: center;
+	grid-template-columns: 340px 325px 325px 340px;
+	align-items: start;
+	justify-items: center;
+}
+.redes {
+	color: #003564;
+	border: solid 5px;
+	font-family: $font-family;
+	font-size: 25px;
+	text-align: center;
+	padding: 10px 45px;
+	margin: 10px;
+	box-shadow: $black-color 0px 2px 20px 1px;
+	border-radius: 100px;
+	background-color: #030a10;
+	-webkit-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+	&:hover {
+		-webkit-animation: pulsate-button 1s ease-in-out;
+		animation: pulsate-button 1s ease-in-out;
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+		-webkit-transition: 0.3s ease-in-out;
+		transition: 0.3s ease-in-out;
+	}
+}
+@keyframes
+	pulsate-button {
+		0%{
+    box-shadow: 0 0 15px #003564, 0 0 30px #009de0;
+	}
+}
+.redes {
+	h5 {
+		padding-bottom: 10px;
+		text-shadow: 0px 0px 10px $black-color;
+	}
+}
+.imagenes-footer {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-content: center;
+	align-items: stretch;
+	animation: float-pagos 5s ease-in-out infinite;
+}
+.imagenes-social {
+	margin: 5px;
+	background-color: #004887;
+	border-radius: 10px;
+	box-shadow: black 0px 0px 7px 4px;
+	a {
+		display: flex;
+	}
+}
+.pagos {
+	margin: 5px;
+	border-radius: 20px;
+	box-shadow: black 0px 0px 7px 4px;
+	animation-delay: 2s;
+}
+@keyframes
+	float-pagos {
+	0%{
+    transform: translateY(0);
+	}
+    50% {
+	transform: translateY(-7px);
+    }
+    100% {
+    transform: translateY(0);
+    }
+}
+.contactanos {
+	color: $black-color;
+	text-align: left;
+	font-family: $font-family;
+	font-size: 23px;
+	padding: 20px;
+	h5 {
+		font-size: 23px;
+		text-shadow: 0px 0px 10px #508f94;
+	}
+	p {
+		color: #9f9f9f;
+		display: inline-block;
+		font-size: 20px;
+	}
+}
+.newsletter {
+	color: $black-color;
+	text-align: left;
+	font-family: $font-family;
+	padding: 20px;
+	h5 {
+		font-size: 23px;
+		text-shadow: 0px 0px 10px #508f94;
+	}
+}
+.name-email {
+	outline: none;
+	font-family: $font-family;
+	font-size: 17px;
+}
+.name-enviar {
+	padding: 1px 10px;
+	text-align: left;
+	text-indent: inherit;
+	color: #fff;
+	background-color: #030a10;
+	border: 0;
+	cursor: pointer;
+	font-size: 20px;
+	font-family: $font-family;
+	border-radius: 5px;
+}
+.pago {
+	color: #003564;
+	border: solid 5px;
+	font-family: $font-family;
+	font-size: 25px;
+	text-align: center;
+	padding: 12px 30px;
+	margin: 10px;
+	box-shadow: black 0px 2px 20px 1px;
+	border-radius: 100px;
+	background-color: #030a10;
+	-webkit-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+	&:hover {
+		-webkit-animation: pulsate-button 1s ease-in-out;
+		animation: pulsate-button 1s ease-in-out;
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+		-webkit-transition: 0.3s ease-in-out;
+		transition: 0.3s ease-in-out;
+	}
+}
+@keyframes
+	pulsate-button {
+		0%{
+    box-shadow: 0 0 15px #003564, 0 0 30px #009de0;
+	}
+}
+.pago {
+	h5 {
+		padding-bottom: 10px;
+		text-shadow: 0px 0px 10px $black-color;
+	}
+}
+
+
+
+

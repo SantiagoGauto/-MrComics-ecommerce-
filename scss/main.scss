@@ -1,0 +1,637 @@
+//==========================pagina==========================
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+.grid-index {
+	display: grid;
+	grid-template: "header"
+    "nav"
+    "section-1"
+    "section-2"
+    "section-3"
+    "subHome"
+    "footer" /
+    auto;
+}
+//==========================algunasvariables==========================
+$font-weight: 600;
+$margin-bottom: 0;
+//====================================================
+p {
+	margin-top: 0;
+	margin-bottom: $margin-bottom;
+}
+h2 {
+	font-size: 150%;
+	font-weight: $font-weight;
+	margin-bottom: $margin-bottom;
+}
+h4 {
+	margin-bottom: $margin-bottom;
+	font-weight: $font-weight;
+}
+h5 {
+	font-size: 80%;
+	margin-bottom: $margin-bottom;
+	font-weight: $font-weight;
+}
+a {
+	text-decoration: none;
+}
+h3 {
+	margin-bottom: $margin-bottom;
+	font-weight: $font-weight;
+}
+
+//==========================Import==========================
+
+@import "allvariables";
+@import "header";
+@import "nav";
+@import "main-body";
+@import "footer";
+
+//==========================media==========================
+
+@media screen and (max-width: 767px) {
+    .grid-index {
+        display: grid;
+        grid-template: "header"
+            "nav"
+            "section-1"
+            "section-2"
+            "section-3"
+            "subHome"
+            "footer" /
+            auto;
+    }
+    .imagen-header {
+        max-width: 100%;
+        margin: 0%;
+        padding: 5px;
+    }
+    .bg-danger {
+        position: sticky;
+        width: -webkit-fill-available;
+        top: 0;
+        z-index: 9999;
+    }
+    .card {
+        margin: 25px;
+        background-color: #040404;
+        border: groove 3px #d7d7d7;
+        border-radius: 40px;
+        box-shadow: black 0px 0px 15px 7px;
+        &:not(:first-child) {
+            display: none;
+        }
+    }
+    .carousel-control-next, .carousel-control-prev {
+        background-color: #000000c2;
+        width: 3%;
+    }
+    .carousel-item {
+        background-color: #242424;
+        box-shadow: #000000 inset 0px 0px 20px 0px;
+    }
+    .card-img, .card-img-top {
+        border-top-left-radius: 35px;
+        border-top-right-radius: 35px;
+    }
+    .card-body {
+        padding: 0px;
+        p {
+            color: #b5b5b5;
+            font-size: 20px;
+            padding: 7px 0px 0px 0px;
+            text-align: center;
+            font-family: 'Staatliches', cursive;
+        }
+    }
+    .precio {
+        margin: 15px 50px -10px;
+    }
+    .marvel-text {
+        padding: 15px;
+        font-size: 45px;
+        box-shadow: #000000 inset 0px 0px 30px 20px;
+        background-attachment: scroll;
+        color: #ff0000;
+    }
+    .fondo-comic {
+        display: none;
+    }
+    .fondo-imagenes {
+        margin: 15px 0px;
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        p {
+            font-size: 25px;
+            padding: 5px 0px 0px 0px;
+        }
+    }
+    .dc-text {
+        padding: 15px;
+        font-size: 45px;
+        box-shadow: #000000 inset 0px 0px 30px 20px;
+        background-attachment: scroll;
+        color: #0088ff;
+    }
+    .text {
+        padding: 15px;
+        font-size: 45px;
+        box-shadow: #000000 inset 0px 0px 30px 20px;
+        background-attachment: scroll;
+        color: #ffffff;
+    }
+    .text-all {
+        padding: 15px;
+        font-size: 45px;
+        box-shadow: #000000 inset 0px 0px 30px 20px;
+        background-attachment: scroll;
+        color: #ffffff;
+    }
+    .merch-text {
+        font-size: 30px;
+    }
+    .fondo-imagenes-libros {
+        margin: 25px 0px;
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        p {
+            font-size: 25px;
+            padding: 5px 0px 0px 0px;
+        }
+    }
+    .imagen-libros {
+        max-width: 266px;
+        max-height: 345px;
+    }
+    .fondo-imagenes-merch {
+        margin: 20px 0px;
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        p {
+            padding: 0px 0px 0px 0px;
+            font-size: 20px;
+        }
+    }
+    .cartel {
+        padding: 5px;
+        border-top-right-radius: 35px;
+        border-top-left-radius: 35px;
+    }
+    .subContenido {
+        display: flex;
+        width: 100%;
+        padding: 10px 5px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .subContenido1 {
+        max-width: 100%;
+        text-align: center;
+        h3 {
+            font-size: 30px;
+        }
+        p {
+            padding: 10px 75px;
+            font-size: 13px;
+        }
+    }
+    .subContenido2 {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    .emailLargo {
+        width: 170px;
+    }
+    .info-mapa {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 10px 1px;
+    }
+    .info-personal {
+        margin: 0px 0px;
+        padding: 5px;
+        font-size: 20px;
+        letter-spacing: 2px;
+        border: none;
+        border-radius: 2%;
+    }
+    .textarea-personal {
+        padding: 15px 45px;
+        margin: 5px;
+    }
+    .mapa {
+        display: none;
+    }
+    footer {
+        box-shadow: inset #000000 0px 0px 6px 1px;
+        background-color: #005a61;
+        img {
+            margin: 3px;
+            max-width: 40px;
+            padding: 0%;
+        }
+    }
+    .texto-footer {
+        font-size: 15px;
+        padding: 10px;
+        h2 {
+            font-size: 60px;
+        }
+        span {
+            color: #ffffff;
+        }
+    }
+    .footer-1 {
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .grid-index {
+        display: grid;
+        grid-template: "header"
+            "nav"
+            "section-1"
+            "section-2"
+            "section-3"
+            "subHome"
+            "footer" /
+            auto;
+    }
+    h2 {
+        font-size: 100%;
+    }
+    .imagen-header {
+        padding: 5px;
+        margin: 0px auto -40px;
+        max-width: 50%;
+    }
+    .bg-danger {
+        position: sticky;
+        width: -webkit-fill-available;
+        top: 0;
+        z-index: 9999;
+    }
+    .marvel-text {
+        padding: 15px;
+        font-size: 70px;
+    }
+    .dc-text {
+        padding: 15px;
+        font-size: 70px;
+    }
+    .text {
+        padding: 15px;
+        font-size: 70px;
+    }
+    .text-all {
+        padding: 15px;
+        font-size: 70px;
+    }
+    .fondo-imagenes {
+        p {
+            font-size: 10px;
+        }
+    }
+    .precio {
+        margin: 15px 25px -10px;
+        font-size: 10px;
+    }
+    .fondo-imagenes-libros {
+        margin: 0px;
+        p {
+            font-size: 10px;
+        }
+    }
+    .fondo-imagenes-merch {
+        p {
+            font-size: 10px;
+        }
+    }
+    .precio-ofertas {
+        margin: 15px 25px -10px;
+        font-size: 10px;
+        &::before {
+            font-size: 5px;
+        }
+    }
+    .info-personal {
+        padding: 25px 10px;
+        border: none;
+        border-radius: 2%;
+    }
+    .mapa {
+        border: none;
+        border-radius: 2%;
+    }
+    .textarea-personal {
+        padding: 0px 160px;
+    }
+    .info-mapa {
+        display: grid;
+        grid-column-gap: 20px;
+        grid-template-columns: none;
+        justify-content: space-around;
+        text-align: center;
+        align-items: stretch;
+    }
+    .subContenido {
+        display: flex;
+        width: 100%;
+        padding: 10px 5px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .subContenido1 {
+        max-width: 100%;
+        text-align: center;
+        h3 {
+            font-size: 35px;
+        }
+        p {
+            padding: 10px 0px;
+            font-size: 15px;
+        }
+    }
+    .subContenido2 {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    .emailLargo {
+        width: 500px;
+    }
+    .texto-footer {
+        font-size: 15px;
+        padding: 10px;
+        h2 {
+            font-size: 70px;
+        }
+    }
+    .footer-1 {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .newsletter {
+        padding: 0px;
+        grid-area: 2 / 3 / 3 / 4;
+    }
+    .redes {
+        grid-area: 1 / 2 / 2 / 3;
+        margin: 3px 35px;
+        padding: 10px 45px;
+    }
+    .contactanos {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+    .pago {
+        grid-area: 1 / 3 / 2 / 4;
+        margin: 3px 35px;
+        padding: 10px 25px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1400px) {
+    .grid-index {
+        display: grid;
+        grid-template: "header"
+            "nav"
+            "section-1"
+            "section-2"
+            "section-3"
+            "subHome"
+            "footer" /
+            auto;
+    }
+    h2 {
+        font-size: 130%;
+    }
+    .bg-danger {
+        position: sticky;
+        width: -webkit-fill-available;
+        top: 0;
+        z-index: 9999;
+    }
+    .marvel-text {
+        padding: 35px;
+        font-size: 85px;
+    }
+    .dc-text {
+        padding: 35px;
+        font-size: 85px;
+    }
+    .text {
+        padding: 35px;
+        font-size: 85px;
+    }
+    .text-all {
+        padding: 35px;
+        font-size: 85px;
+    }
+    .fondo-imagenes {
+        p {
+            font-size: 15px;
+        }
+    }
+    .precio {
+        margin: 15px 35px -10px;
+        font-size: 15px;
+    }
+    .fondo-imagenes-libros {
+        p {
+            font-size: 15px;
+        }
+    }
+    .fondo-imagenes-merch {
+        p {
+            font-size: 15px;
+        }
+    }
+    .precio-ofertas {
+        margin: 15px 35px -10px;
+        font-size: 15px;
+        &::before {
+            font-size: 10px;
+        }
+    }
+    .info-personal {
+        padding: 25px 10px;
+        border: none;
+        border-radius: 2%;
+    }
+    .textarea-personal {
+        resize: none;
+        padding: 0px 145px;
+    }
+    .info-mapa {
+        display: grid;
+        grid-column-gap: 20px;
+        grid-template-columns: none;
+        justify-content: space-around;
+        text-align: center;
+        align-items: stretch;
+    }
+    .mapa {
+        border: none;
+        border-radius: 2%;
+    }
+    .subContenido {
+        padding: 25px 30px;
+    }
+    .emailLargo {
+        width: 500px;
+    }
+    .footer-1 {
+        grid-template-columns: 290px 220px 220px 290px;
+    }
+}
+
+@media screen and (min-width: 1700px) and (max-width: 1920px) {
+    .grid-index {
+        display: grid;
+        grid-template: "header"
+            "nav"
+            "section-1"
+            "section-2"
+            "section-3"
+            "subHome"
+            "footer" /
+            auto;
+    }
+    .bg-danger {
+        position: sticky;
+        width: -webkit-fill-available;
+        top: 0;
+        z-index: 9999;
+    }
+    nav {
+        ul {
+            li {
+                font-size: 30px;
+            }
+        }
+    }
+    .marvel-text {
+        padding: 40px;
+        font-size: 115px;
+    }
+    .fondo-imagenes {
+        width: 325px;
+        p {
+            font-size: 20px;
+        }
+    }
+    .precio {
+        font-size: 30px;
+    }
+    .dc-text {
+        padding: 40px;
+        font-size: 115px;
+    }
+    .text {
+        padding: 40px;
+        font-size: 115px;
+    }
+    .fondo-imagenes-libros {
+        p {
+            font-size: 20px;
+        }
+    }
+    .fondo-imagenes-merch {
+        p {
+            font-size: 20px;
+        }
+    }
+    .precio-ofertas {
+        font-size: 30px;
+    }
+    .info-personal {
+        padding: 10px 90px;
+    }
+    .form-control-personal {
+        font-size: 20px;
+        padding: 3px 100px;
+    }
+    .textarea-personal {
+        font-size: 20px;
+        padding: 0 60px;
+    }
+    .mapa {
+        padding: 65px 0px;
+        font-size: 35px;
+    }
+    .subContenido {
+        padding: 50px 0px;
+    }
+    .subContenido1 {
+        max-width: 40%;
+        h3 {
+            font-size: 2.50rem;
+        }
+        p {
+            font-size: 26px;
+        }
+    }
+    .subContenido2 {
+        height: 70px;
+        margin-top: 30px;
+        margin-left: 40px;
+    }
+    .emailLargo {
+        font-size: 24px;
+        width: 600px;
+    }
+    .btnNew {
+        width: 180px;
+        font-size: 26px;
+    }
+    .texto-footer {
+        font-size: 30px;
+        h2 {
+            font-size: 70px;
+        }
+    }
+    .footer-1 {
+        grid-template-columns: 460px 375px 375px 460px;
+    }
+    .redes {
+        font-size: 35px;
+        padding: 20px 85px;
+    }
+    .contactanos {
+        font-size: 33px;
+        h5 {
+            font-size: 33px;
+        }
+        p {
+            font-size: 30px;
+        }
+    }
+    .newsletter {
+        h5 {
+            font-size: 33px;
+        }
+    }
+    .name-email {
+        font-size: 27px;
+    }
+    .name-enviar {
+        font-size: 30px;
+    }
+    .pago {
+        font-size: 35px;
+        padding: 25px 65px;
+    }
+}    
