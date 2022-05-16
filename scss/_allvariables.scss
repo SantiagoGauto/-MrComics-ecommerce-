@@ -1,3 +1,29 @@
 $font-family: 'Staatliches', cursive;
 $black-color: #000000;
 $white-color: #ffffff;
+
+// Maps
+
+$sociales: (
+    facebook: #12347c,
+    instagram: linear-gradient(50deg, #ffdc80 10%, #f77737 20%, #f77737 30%, #f56040 40%, #fd1d1d 50%, #e1306c 60%, #c13584 70%, #833ab4 80%, #5851db 90%, #405de6 100%),
+    twitter: #006a93
+);
+@each $red, $color in $sociales {
+    .imagenes-social-#{$red} {
+        background: $color;
+        margin: 5px;
+        border-radius: 10px;
+        box-shadow: black 0px 0px 7px 4px;
+        a {
+            display: flex;
+        }
+    }
+}
+
+// Mixins
+
+@mixin size{
+    margin: 5px;
+    width: calc(100%/5) !important;
+}

@@ -6,8 +6,7 @@
 	box-shadow: $black-color inset 0px 0px 15px 5px;
 }
 .fondo-imagenes {
-	margin: 5px;
-	width: calc(100%/5) !important;
+	@include size;
 	background-color: #040404;
 	border-radius: 15px;
 	box-shadow: $black-color 0px 0px 15px 5px;
@@ -74,7 +73,7 @@
 }
 .marvel-text {
 	box-shadow: $black-color inset 0px 0px 40px 25px;
-	padding: 50px;
+	padding: 35px;
 	height: 100%;
 	width: 100%;
 	text-align: center;
@@ -91,7 +90,7 @@
 }
 .dc-text {
 	box-shadow: $black-color inset 0px 0px 40px 25px;
-	padding: 50px;
+	padding: 35px;
 	height: 100%;
 	width: 100%;
 	text-align: center;
@@ -108,7 +107,7 @@
 }
 .text {
 	box-shadow: $black-color inset 0px 0px 40px 25px;
-	padding: 50px;
+	padding: 35px;
 	height: 100%;
 	width: 100%;
 	text-align: center;
@@ -123,7 +122,7 @@
 }
 .text-all {
 	box-shadow: black inset 0px 0px 40px 25px;
-	padding: 30px;
+	padding: 35px;
 	height: 100%;
 	width: 100%;
 	text-align: center;

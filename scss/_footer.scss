@@ -15,8 +15,10 @@
 	}
 }
 .fa-angles-up {
+	@extend .fa-angles;
 	color: #9f9d91;
 	font-size: 35px;
+	padding: 0%;
 	filter: drop-shadow(0px 2px 2px $black-color);
 	-webkit-transition: 0.3s ease-in-out;
 	transition: 0.3s ease-in-out;
@@ -97,15 +99,6 @@ footer {
 	align-content: center;
 	align-items: stretch;
 	animation: float-pagos 5s ease-in-out infinite;
-}
-.imagenes-social {
-	margin: 5px;
-	background-color: #004887;
-	border-radius: 10px;
-	box-shadow: black 0px 0px 7px 4px;
-	a {
-		display: flex;
-	}
 }
 .pagos {
 	margin: 5px;
