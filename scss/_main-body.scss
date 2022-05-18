@@ -2,7 +2,7 @@
 	display: flex;
 	justify-content: space-around;
 	background-color: #242424;
-	padding: 25px 10px;
+	padding: 15px 10px;
 	box-shadow: $black-color inset 0px 0px 15px 5px;
 }
 .fondo-imagenes {
@@ -212,6 +212,53 @@ div {
 	font-family: $font-family;
 	font-size: 20px;
 }
+
+.cartel-sin-stock {
+	position: absolute;
+    margin-top: 40px;
+	padding: 3px 10px;
+	color: #890000;
+    background-color: #e13030;
+	box-shadow: #000000 3px 5px 6px 2px;
+	font-family: $font-family;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 10px;
+}
+
+.cartel-sin-stock-1 {
+	position: absolute;
+	padding: 3px 10px;
+	color: #890000;
+    background-color: #e13030;
+	box-shadow: #000000 3px 5px 6px 2px;
+	font-family: $font-family;
+	border-bottom-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+.cartel-poco-stock {
+	position: absolute;
+    margin-top: 40px;
+	padding: 3px 10px;
+	color: #541700;
+    background-color: #e17e30;
+	box-shadow: #000000 3px 5px 6px 2px;
+	font-family: $font-family;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 10px;
+}
+
+.cartel-poco-stock-1 {
+	position: absolute;
+	padding: 3px 10px;
+	color: #541700;
+    background-color: #e17e30;
+	box-shadow: #000000 3px 5px 6px 2px;
+	font-family: $font-family;
+	border-bottom-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
 .imagenes-ofertas {
 	border-top-right-radius: 0px !important;
 	border-top-left-radius: 0px !important;

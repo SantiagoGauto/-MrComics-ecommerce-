@@ -138,8 +138,17 @@ header {
     background-position-x: left; }
 
 .navbar-light .navbar-toggler {
-  color: #4e4e4e;
-  background-color: #727c76; }
+  background: linear-gradient(90deg, #5c5c5c 0%, #cdcdcd 50%, #535353 100%);
+  border-radius: 0px;
+  padding: 0px 13px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 5px; }
+  .navbar-light .navbar-toggler:focus {
+    box-shadow: none; }
+
+.container-fluid {
+  padding-right: var(--bs-gutter-x, 5px);
+  padding-left: var(--bs-gutter-x, 5px); }
 
 .navbar-brand {
   font-size: 1.45rem !important;
@@ -151,7 +160,6 @@ header {
 
 .form-control {
   padding: 5px 125px 5px 15px !important;
-  margin: 0 5px !important;
   background-color: #00000047; }
 
 .form-label {
@@ -162,11 +170,14 @@ header {
   border-color: #ffffff00;
   background-color: #aab2ac; }
 
+.navbar-light .navbar-toggler-icon {
+  background-image: url(../imagenes/menu.png); }
+
 .fondo-comic {
   display: flex;
   justify-content: space-around;
   background-color: #242424;
-  padding: 25px 10px;
+  padding: 15px 10px;
   box-shadow: #000000 inset 0px 0px 15px 5px; }
 
 .fondo-imagenes {
@@ -362,6 +373,48 @@ div img {
   border-top-left-radius: 12px;
   font-family: "Staatliches", cursive;
   font-size: 20px; }
+
+.cartel-sin-stock {
+  position: absolute;
+  margin-top: 40px;
+  padding: 3px 10px;
+  color: #890000;
+  background-color: #e13030;
+  box-shadow: #000000 3px 5px 6px 2px;
+  font-family: "Staatliches", cursive;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 10px; }
+
+.cartel-sin-stock-1 {
+  position: absolute;
+  padding: 3px 10px;
+  color: #890000;
+  background-color: #e13030;
+  box-shadow: #000000 3px 5px 6px 2px;
+  font-family: "Staatliches", cursive;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px; }
+
+.cartel-poco-stock {
+  position: absolute;
+  margin-top: 40px;
+  padding: 3px 10px;
+  color: #541700;
+  background-color: #e17e30;
+  box-shadow: #000000 3px 5px 6px 2px;
+  font-family: "Staatliches", cursive;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 10px; }
+
+.cartel-poco-stock-1 {
+  position: absolute;
+  padding: 3px 10px;
+  color: #541700;
+  background-color: #e17e30;
+  box-shadow: #000000 3px 5px 6px 2px;
+  font-family: "Staatliches", cursive;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px; }
 
 .imagenes-ofertas {
   border-top-right-radius: 0px !important;
@@ -729,7 +782,6 @@ footer {
     top: 0;
     z-index: 9999; }
   .card {
-    margin: 25px;
     background-color: #040404;
     border: groove 3px #d7d7d7;
     border-radius: 40px;
@@ -740,6 +792,7 @@ footer {
     background-color: #000000c2;
     width: 3%; }
   .carousel-item {
+    padding: 15px;
     background-color: #242424;
     box-shadow: #000000 inset 0px 0px 20px 0px; }
   .card-img, .card-img-top {
@@ -753,14 +806,12 @@ footer {
       padding: 7px 0px 0px 0px;
       text-align: center;
       font-family: 'Staatliches', cursive; }
-  .precio {
-    margin: 15px 50px -10px; }
   .marvel-text {
-    padding: 15px;
+    padding: 5px 0px;
     font-size: 45px;
     box-shadow: #000000 inset 0px 0px 30px 20px;
     background-attachment: scroll;
-    color: #ff0000; }
+    color: #bf0000; }
   .fondo-comic {
     display: none; }
   .fondo-imagenes {
@@ -772,25 +823,25 @@ footer {
       font-size: 25px;
       padding: 5px 0px 0px 0px; }
   .dc-text {
-    padding: 15px;
+    padding: 5px 0px;
     font-size: 45px;
     box-shadow: #000000 inset 0px 0px 30px 20px;
     background-attachment: scroll;
     color: #0088ff; }
   .text {
-    padding: 15px;
+    padding: 30px 0px;
     font-size: 45px;
     box-shadow: #000000 inset 0px 0px 30px 20px;
     background-attachment: scroll;
     color: #ffffff; }
   .text-all {
-    padding: 15px;
+    padding: 5px 0px;
     font-size: 45px;
     box-shadow: #000000 inset 0px 0px 30px 20px;
     background-attachment: scroll;
     color: #ffffff; }
   .merch-text {
-    font-size: 30px; }
+    font-size: 55px; }
   .fondo-imagenes-libros {
     margin: 25px 0px; }
     .fondo-imagenes-libros img {
@@ -814,6 +865,12 @@ footer {
     padding: 5px;
     border-top-right-radius: 35px;
     border-top-left-radius: 35px; }
+  .cartel-sin-stock-1 {
+    border-top-left-radius: 35px;
+    margin: -2.5px; }
+  .cartel-poco-stock-1 {
+    border-top-left-radius: 35px;
+    margin: -2.5px; }
   .subContenido {
     display: flex;
     width: 100%;
@@ -826,7 +883,7 @@ footer {
     .subContenido1 h3 {
       font-size: 30px; }
     .subContenido1 p {
-      padding: 10px 75px;
+      padding: 10px 25px;
       font-size: 13px; }
   .subContenido2 {
     margin-top: 0px;
@@ -1026,10 +1083,12 @@ footer {
   .footer-1 {
     grid-template-columns: 290px 220px 220px 290px; } }
 
-@media screen and (min-width: 1700px) and (max-width: 1920px) {
+@media screen and (min-width: 1700px) {
   .grid-index {
     display: grid;
     grid-template: "header" "nav" "section-1" "section-2" "section-3" "subHome" "footer" / auto; }
+  .iconoss {
+    font-size: 35px; }
   .bg-danger {
     position: sticky;
     width: -webkit-fill-available;
@@ -1054,7 +1113,8 @@ footer {
   .precio-ofertas {
     font-size: 25px; }
   .info-personal {
-    padding: 10px 90px; }
+    padding: 10px 90px;
+    font-size: 35px; }
   .form-control-personal {
     font-size: 20px;
     padding: 3px 100px; }
@@ -1069,19 +1129,18 @@ footer {
   .subContenido1 {
     max-width: 40%; }
     .subContenido1 h3 {
-      font-size: 2.50rem; }
+      font-size: 2.10rem; }
     .subContenido1 p {
-      font-size: 26px; }
+      font-size: 20px; }
   .subContenido2 {
     height: 70px;
     margin-top: 30px;
     margin-left: 40px; }
   .emailLargo {
-    font-size: 24px;
-    width: 600px; }
+    font-size: 20px; }
   .btnNew {
     width: 180px;
-    font-size: 26px; }
+    font-size: 20px; }
   .texto-footer {
     font-size: 30px; }
     .texto-footer h2 {

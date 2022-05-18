@@ -79,7 +79,6 @@ h3 {
         z-index: 9999;
     }
     .card {
-        margin: 25px;
         background-color: #040404;
         border: groove 3px #d7d7d7;
         border-radius: 40px;
@@ -93,6 +92,7 @@ h3 {
         width: 3%;
     }
     .carousel-item {
+        padding: 15px;
         background-color: #242424;
         box-shadow: #000000 inset 0px 0px 20px 0px;
     }
@@ -110,15 +110,12 @@ h3 {
             font-family: 'Staatliches', cursive;
         }
     }
-    .precio {
-        margin: 15px 50px -10px;
-    }
     .marvel-text {
-        padding: 15px;
+        padding: 5px 0px;
         font-size: 45px;
         box-shadow: #000000 inset 0px 0px 30px 20px;
         background-attachment: scroll;
-        color: #ff0000;
+        color: #bf0000;
     }
     .fondo-comic {
         display: none;
@@ -135,28 +132,28 @@ h3 {
         }
     }
     .dc-text {
-        padding: 15px;
+        padding: 5px 0px;
         font-size: 45px;
         box-shadow: #000000 inset 0px 0px 30px 20px;
         background-attachment: scroll;
         color: #0088ff;
     }
     .text {
-        padding: 15px;
+        padding: 30px 0px;
         font-size: 45px;
         box-shadow: #000000 inset 0px 0px 30px 20px;
         background-attachment: scroll;
         color: #ffffff;
     }
     .text-all {
-        padding: 15px;
+        padding: 5px 0px;
         font-size: 45px;
         box-shadow: #000000 inset 0px 0px 30px 20px;
         background-attachment: scroll;
         color: #ffffff;
     }
     .merch-text {
-        font-size: 30px;
+        font-size: 55px;
     }
     .fondo-imagenes-libros {
         margin: 25px 0px;
@@ -189,6 +186,14 @@ h3 {
         border-top-right-radius: 35px;
         border-top-left-radius: 35px;
     }
+    .cartel-sin-stock-1 {
+        border-top-left-radius: 35px;
+        margin: -2.5px;
+    }
+    .cartel-poco-stock-1 {
+        border-top-left-radius: 35px;
+        margin: -2.5px;
+    }
     .subContenido {
         display: flex;
         width: 100%;
@@ -203,7 +208,7 @@ h3 {
             font-size: 30px;
         }
         p {
-            padding: 10px 75px;
+            padding: 10px 25px;
             font-size: 13px;
         }
     }
@@ -495,7 +500,7 @@ h3 {
     }
 }
 
-@media screen and (min-width: 1700px) and (max-width: 1920px) {
+@media screen and (min-width: 1700px) {
     .grid-index {
         display: grid;
         grid-template: "header"
@@ -506,6 +511,9 @@ h3 {
             "subHome"
             "footer" /
             auto;
+    }
+    .iconoss {
+        font-size: 35px;
     }
     .bg-danger {
         position: sticky;
@@ -552,6 +560,7 @@ h3 {
     }
     .info-personal {
         padding: 10px 90px;
+        font-size: 35px;
     }
     .form-control-personal {
         font-size: 20px;
@@ -571,10 +580,10 @@ h3 {
     .subContenido1 {
         max-width: 40%;
         h3 {
-            font-size: 2.50rem;
+            font-size: 2.10rem;
         }
         p {
-            font-size: 26px;
+            font-size: 20px;
         }
     }
     .subContenido2 {
@@ -583,12 +592,11 @@ h3 {
         margin-left: 40px;
     }
     .emailLargo {
-        font-size: 24px;
-        width: 600px;
+        font-size: 20px;
     }
     .btnNew {
         width: 180px;
-        font-size: 26px;
+        font-size: 20px;
     }
     .texto-footer {
         font-size: 30px;
